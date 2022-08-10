@@ -5,7 +5,6 @@ namespace Figures
 {
     class Circle : Shape
     {
-       //private double radius;
         public double Radius { get; set; }
         private double[,] Coordinates;
         public void CircleCoordinates()
@@ -15,12 +14,12 @@ namespace Figures
             for (int i = 0; i <= numberOfPoints - 1; i++)
             {
                 Coordinates[0, i] = i - Radius;
-                Console.WriteLine(Coordinates[0, i]);
+                //Console.WriteLine(Coordinates[0, i]);
             }
             for (int j = 0; j <= numberOfPoints - 1; j++)
             {
                 Coordinates[1, j] = Math.Sqrt(Math.Pow(Radius,2)- Math.Pow(Coordinates[0,j], 2));
-                Console.WriteLine(Coordinates[1, j]);
+                //Console.WriteLine(Coordinates[1, j]);
             }
             
         }
